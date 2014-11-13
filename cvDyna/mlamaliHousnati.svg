@@ -25,7 +25,7 @@
 @font-face{font-family:'MinionPro-Regular';src:url("font/MYRIADPRO-BOLD.OTF");}
 @font-face{font-family:'Gotham-Black';src:url("font/Gotham-Black.otf");}
 @font-face{font-family:'Gotham-Light';src:url("font/Gotham-Light.otf");}
-@font-face{font-family:'GothamXNarrow-Bold';src:url("font/");}
+@font-face{font-family:'GothamXNarrow-Bold';src:url("font/gotham-extra-narrow-bold.otf");}
 @font-face{font-family:'GothamXNarrow-Book';src:url("font/gotham-extra-narrow-book.otf");}
 @font-face{font-family:'Roboto-Black';src:url("font/Roboto-Black.ttf");}
 ]]>
