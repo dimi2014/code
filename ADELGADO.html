@@ -1,6 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
+<script type="text/javascript" src="js/queue.js" ></script>
+<script type="text/javascript" src="js/d3.js" ></script>
+
 <script>
 
 	var colorprec ;
@@ -13,6 +17,21 @@
 			fond.setAttribute("fill",colorchange);
 			colorchange=colorprec ;
 	}
+	function init(){
+		
+		queue()
+			.defer(d3.xml, "svg/jpoilvilain.svg", "image/svg+xml")
+			.await(charge);
+		
+	}
+	
+	function charge(error, xml){
+    	
+		var importedNode = document.importNode(xml.documentElement, true);
+   	  	d3.select("#monSVG").node().appendChild(importedNode);
+	}
+
+
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Mon premier code</title>
@@ -20,7 +39,7 @@
 <link rel="stylesheet" type="text/css" href="../../../Users/DIMI_M1/Desktop/mystyle.css" />
 </head>
 
-<body>
+<body onload="init();">
 <h1>Mon super cours</h1>
 <h2>1er exercice</h2>
 <h3>ajouter du SVG</h3>
@@ -36,5 +55,7 @@
 
 
 <h2>2eme exercice</h2>
+<h3>ajoutez du SVG dynamique</h3>
+<div id="monSVG"></div>
 </body>
 </html>
