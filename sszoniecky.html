@@ -4,18 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Mon premier code super chouette</title>
 
-<link rel="stylesheet" type="text/css" href="mystyle.css" />
 <script type="text/javascript" src="js/queue.js" ></script>
 <script type="text/javascript" src="js/d3.js" ></script>
 <script>
 	var colorPrec;
 	var colorChange="red";
-	function changeCouleur(){
+	function changeCouleur() {
 		var fond = document.getElementById('fond');
 		colorPrec = fond.getAttribute("fill");
 		fond.setAttribute("fill",colorChange);
 		colorChange = colorPrec;
 	}
+
 	function init(){
 		queue()
 			.defer(d3.xml, "svg/jpoilvilain.svg", "image/svg+xml")
@@ -40,6 +40,7 @@
 	}
 </script>
 
+<link rel="stylesheet" type="text/css" href="mystyle.css" />
 </head>
 
 <body onload="init();">

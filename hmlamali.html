@@ -1,23 +1,51 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<<<<<<< Updated upstream
 		<title>Mon premier code</title>
 		<link rel="stylesheet" type="text/css" href="mystyle.css" />
 		<script type="text/javascript">
 			var colorPrev;
 			var colorChange='#A9F5BC';
+=======
+		<title>Mon premier code super chouette</title>
 
-			function changeCouleur(){
-				var trait_bas = document.getElementById('trait_milieu_bas');
-				//trait_bas.setAttribute("fill","#A9F5BC");
-				colorPrev = trait_bas.getAttribute("fill");
-				trait_bas.setAttribute("fill",colorChange);
-				colorChange = colorPrev;
+		<script type="text/javascript" src="js/queue.js" ></script>
+		<script type="text/javascript" src="js/d3.js" ></script>
+		<script>
+			var colorPrec;
+			var colorChange="red";
+			function changeCouleur() {
+				var fond = document.getElementById('fond');
+				colorPrec = fond.getAttribute("fill");
+				fond.setAttribute("fill",colorChange);
+				colorChange = colorPrec;
+			}
+>>>>>>> Stashed changes
+
+			function init(){
+				
+				queue()
+					.defer(d3.xml, "svg/jpoilvilain.svg", "image/svg+xml")
+					.await(charge);
+				
+			}
+			
+			/*charge le premier svg
+			merci à http://bl.ocks.org/KoGor/8162640
+			*/
+			function charge(error, xml){
+		    	//Adding our svg file to HTML document
+				var importedNode = document.importNode(xml.documentElement, true);
+		   	  	d3.select("#monSVG").node().appendChild(importedNode);
 			}
 		</script>
+
+		<link rel="stylesheet" type="text/css" href="mystyle.css" />
 	</head>
 
-	<body>
+	<body onload="init();" > <!-- Evénement qui se produit quand le navigateur a fini de charger la page-->
 		<h1>Mon super cours</h1>
 		<h2>1er exercice</h2>
 		<h3>ajouter du SVG</h3>
@@ -33,5 +61,10 @@
 	c2.878,1.661-16.928,4.471-24.941,0.126c-13.822-7.497,3.955-56.977,0.948-67.855C43.362,31.699,31.596,37.136,31.596,37.136z"/>
 </svg> 
 		<h2>2eme exercice</h2>
+<<<<<<< Updated upstream
+=======
+		<h3>Ajouter du SVG en dynamique</h3>
+		<div id="monSVG"></div>
+>>>>>>> Stashed changes
 	</body>
 </html>
