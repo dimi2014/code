@@ -30,7 +30,7 @@ position:absolute;
 max-height:0;
 left: 0;
 right: 0;
-overflow:hidden;
+overflow:scroll;
 -moz-transition: .8s all .3s;
 -webkit-transition: .8s all .3s;
 transition: .8s all .3s;
@@ -108,6 +108,18 @@ color:#000;
 <script type="text/javascript" src="../js/queue.js" ></script>
 <script type="text/javascript" src="../js/d3.js" ></script>
 <script>
+	//création d'un tableau json
+	var arrEtu = [{"nom":"Pauline"
+	,"comp":[{"nom":"photoshop","val":2}
+			,{"nom":"illustrator","val":8}
+			,{"nom":"javascript","val":10}]
+	, "photo":"/laphotodepauline.png"}
+				  ,{"nom":"Pierrick"
+	,"comp":[{"nom":"photoshop","val":4}
+			,{"nom":"illustrator","val":4}
+			,{"nom":"javascript","val":3}]
+	,"photo":"/laphotodepauline.png"}];
+	
 	function init(){
 		$("#menu li ul li").click(function() {
 			 var li = $(this);
@@ -135,7 +147,25 @@ color:#000;
 		  objDiv.removeChild(objDiv.firstChild);
 		}
 		objDiv.appendChild(objXml);
-	}	
+	}
+	
+	function creaGraph(){
+		//merci beaucopup à http://bost.ocks.org/mike/bar/
+		d3.select("#objSVG")
+		  .selectAll("div")
+    		.data(arrEtu[0].comp)
+  			.enter().append("div")
+    		.style("width", function(d) { 
+					return d.val * 10 + "px"; 
+				})
+			.style("background-color", "red")
+    		.text(function(d) { 
+				return d.nom; 
+				});
+		
+		
+	}
+	
 </script>
 </head>
 
@@ -158,6 +188,7 @@ color:#000;
             </ul>
       </li>
     </ul>
+    <div onclick="creaGraph()">Creation du graph</div>
     <div id="objSVG"></div>
 </body>
 </html>
