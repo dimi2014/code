@@ -104,10 +104,42 @@ text-transform:inherit;
 color:#000;
 }
 </style>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
+<script type="text/javascript" src="../js/queue.js" ></script>
+<script type="text/javascript" src="../js/d3.js" ></script>
+<script>
+	function init(){
+		$("#menu li ul li").click(function() {
+			 var li = $(this);
+			 var url = li[0].textContent;
+			 if(url)getSVG(url);
+		});
+	}
+	
+	function getSVG(url){
+		queue()
+			.defer(d3.xml, url, "image/svg+xml")
+			.await(charge);
+	}
 
+	/*charge le premier svg
+	merci à http://bl.ocks.org/KoGor/8162640
+	*/
+	function charge(error, xml){
+	   	//Adding our svg file to HTML document
+		var objXml = document.importNode(xml.documentElement, true);
+		//récupère le div à remplir avec le svg
+		var objDiv = document.getElementById('objSVG');
+		//supprime tous les enfants de ce div
+		while (objDiv.firstChild) {
+		  objDiv.removeChild(objDiv.firstChild);
+		}
+		objDiv.appendChild(objXml);
+	}	
+</script>
 </head>
 
-<body>
+<body onload="init();">
     <ul id="menu">
         <li><a href="#">Liste des CV</a>       
             <ul>
@@ -126,5 +158,6 @@ color:#000;
             </ul>
       </li>
     </ul>
+    <div id="objSVG"></div>
 </body>
 </html>
