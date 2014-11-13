@@ -15,19 +15,19 @@
 	 viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
 <style type="text/css">
 <![CDATA[
-@font-face{font-family:'Gotham-Bold';src:url("font/Gotham-Bold.otf")}
-@font-face{font-family:'Gotham-Book';src:url("font/Gotham-Book.otf")}
-@font-face{font-family:'Gotham-ThinItalic';src:url("font/Gotham-ThinItalic.otf")}
-@font-face{font-family:'GothamXNarrow-Medium';src:url("font/gotham-extra-narrow-medium.otf")}
-@font-face{font-family:'GothamXNarrow-Light';src:url("font/gotham-extra-narrow-light.otf")}
-@font-face{font-family:'MyriadPro-Bold';src:url("font/MYRIADPRO-BOLD.otf")}
-@font-face{font-family:'Dekar';src:url("font/Dekar.otf")}
-@font-face{font-family:'MinionPro-Regular';src:url("font/MYRIADPRO-BOLD.OTF")}
-@font-face{font-family:'Gotham-Black';src:url("font/Gotham-Black.otf")}
-@font-face{font-family:'Gotham-Light';src:url("font/Gotham-Light.otf")}
-@font-face{font-family:'GothamXNarrow-Bold';src:url("font/")}
-@font-face{font-family:'GothamXNarrow-Book';src:url("font/gotham-extra-narrow-book.otf")}
-@font-face{font-family:'Roboto-Black';src:url("font/Roboto-Black.ttf")}
+@font-face{font-family:'Gotham-Bold';src:url("font/Gotham-Bold.otf");}
+@font-face{font-family:'Gotham-Book';src:url("font/Gotham-Book.otf");}
+@font-face{font-family:'Gotham-ThinItalic';src:url("font/Gotham-ThinItalic.otf");}
+@font-face{font-family:'GothamXNarrow-Medium';src:url("font/gotham-extra-narrow-medium.otf");}
+@font-face{font-family:'GothamXNarrow-Light';src:url("font/gotham-extra-narrow-light.otf");}
+@font-face{font-family:'MyriadPro-Bold';src:url("font/MYRIADPRO-BOLD.otf");}
+@font-face{font-family:'Dekar';src:url("font/Dekar.otf");}
+@font-face{font-family:'MinionPro-Regular';src:url("font/MYRIADPRO-BOLD.OTF");}
+@font-face{font-family:'Gotham-Black';src:url("font/Gotham-Black.otf");}
+@font-face{font-family:'Gotham-Light';src:url("font/Gotham-Light.otf");}
+@font-face{font-family:'GothamXNarrow-Bold';src:url("font/");}
+@font-face{font-family:'GothamXNarrow-Book';src:url("font/gotham-extra-narrow-book.otf");}
+@font-face{font-family:'Roboto-Black';src:url("font/Roboto-Black.ttf");}
 ]]>
 </style>
 <switch>
