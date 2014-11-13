@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mon premier code</title>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css" />
+
+<script>
+
+	var colorPrev;	
+	var colorChange="brown";
+	function changeCouleur(){
+		var fond=document.getElementById('fond');
+		colorPrev = fond.getAttribute("fill");
+		fond.setAttribute("fill",colorChange);
+		colorChange=colorPrev;
+	}
+
+</script>
+
+</head>
+
+
+<body>
+<h1>Mon super cours</h1>
+<h2>1er exercice</h2>
+<h3>ajouter du SVG</h3>
+<svg width="12cm" height="4cm" viewBox="0 0 1200 400"
+     xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <desc>Example rect01 - rectangle with sharp corners</desc>
+
+  <!-- Show outline of canvas using 'rect' element -->
+  <rect x="1" y="1" width="1198" height="398"
+        fill="none" stroke="brown" stroke-width="2"/>
+
+  <rect onclick="alert('toto')"  x="400" y="100" width="400" height="200"
+        fill="orange" stroke="navy" stroke-width="10"  />
+</svg>
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="595.28px" height="841.89px" viewBox="0 0 595.28 841.89" enable-background="new 0 0 595.28 841.89" xml:space="preserve">
+
+<rect id="fond" x="-224.367" y="46.469" fill="#FFED00" stroke="#FFED00" width="871.429" height="517.347"/>
+
+<polygon onclick="changeCouleur()" fill="#F29400" stroke="#F29400" points="231.755,170.959 176.325,165.823 140.669,208.573 128.425,154.268 76.75,133.568 
+	124.612,105.143 128.331,49.6 170.155,86.336 224.129,72.708 202.115,123.838 "/>
+    
+</svg>
+<h2>2eme exercice</h2>
+<h3>ajouter du SVG dynamique</h3>
+<div id="monSVG"></div>
+</body>
+</html>
