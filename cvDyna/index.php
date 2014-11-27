@@ -108,6 +108,13 @@ color:#000;
 <script type="text/javascript" src="../js/queue.js" ></script>
 <script type="text/javascript" src="../js/d3.js" ></script>
 <script>
+	//lien vers les réponses du formulaire
+	var urlCSV = "https://docs.google.com/spreadsheets/d/1sQM5Juc1t6KGnzspO7u5wdBWr3Q0dDGTy10qySG91lU/pubhtml?gid=1533590049&single=true&format=csv";
+	urlCSV = "../data/ReponsesDimi1.csv";
+	var urlSVG;
+	var dataEtu;
+	var idEtu = -1;
+	
 	//création d'un tableau json
 	var arrEtu = [{"nom":"Pauline"
 	,"comp":[{"nom":"photoshop","val":2}
@@ -123,9 +130,17 @@ color:#000;
 	function init(){
 		$("#menu li ul li").click(function() {
 			 var li = $(this);
-			 var url = li[0].textContent;
-			 if(url)getSVG(url);
+			 urlSVG = li[0].textContent;
+			 if(urlSVG)getSVG(urlSVG);
 		});
+		
+		d3.csv(urlCSV, function(data) {
+		  dataEtu = data;
+		  
+		}, function(error, rows) {
+		  console.log(rows);
+		});
+
 	}
 	
 	function getSVG(url){
@@ -166,6 +181,26 @@ color:#000;
 		
 	}
 	
+	function afficheDataEtu(d){
+		if(urlSVG=="benoistflorianSVG.svg"){			
+			d3.select("#PrenomNom").text(d['Prénom']+" "+d['Nom']);
+		}
+	}
+	
+	function nextStudent(){
+		if(idEtu == dataEtu.length-1)return;
+		idEtu ++;
+		afficheDataEtu(dataEtu[idEtu]);
+	}
+
+	function prevStudent(){
+		idEtu --;
+		if(idEtu < 0){
+			idEtu ++;
+		}		
+		afficheDataEtu(dataEtu[idEtu]);
+	}
+
 </script>
 </head>
 
@@ -189,6 +224,8 @@ color:#000;
       </li>
     </ul>
     <div onclick="creaGraph()">Creation du graph</div>
+    <div id="btnNextStudent" onclick="nextStudent()">Etudiant suivant</div>
+    <div id="btnPrevStudent" onclick="prevStudent()">Etudiant précédent</div>
     <div id="objSVG"></div>
 </body>
 </html>
