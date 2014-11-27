@@ -214,7 +214,7 @@ color:#000;
         {
             if($fichier != '.' && $fichier != '..' && $fichier != 'index.php')
             {
-                echo '<li><a href="#">'.$fichier.'</a</li>';
+                echo '<li><a href="#">'.$fichier.'</a></li>';
             }
         
         }
