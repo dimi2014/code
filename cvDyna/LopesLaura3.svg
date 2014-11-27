@@ -24357,17 +24357,17 @@ PvfwiieKJ4oniieKJ4oniieKJ0o1KP8JMAC7M3qBLrcFqQAAAABJRU5ErkJggg==" transform="mat
 	
 		<rect x="36.994" y="541.011" transform="matrix(-0.9416 -0.3368 0.3368 -0.9416 -31.5269 1190.5566)" fill="#6DCFF6" width="101.002" height="114.003"/>
 </g>
-<g>
+<g id="arrowup">
 	
 		<rect x="115.74" y="202.336" transform="matrix(0.7553 -0.6554 0.6554 0.7553 -102.5724 134.4532)" fill="#FFFFFF" width="26.026" height="4.48"/>
 	
 		<rect x="131.868" y="202.336" transform="matrix(-0.7553 -0.6554 0.6554 -0.7553 120.2216 454.0422)" fill="#FFFFFF" width="26.026" height="4.48"/>
 </g>
-<g>
+<g id="arrowdown">
 	
 		<rect x="138.127" y="408.044" transform="matrix(-0.7477 0.664 -0.664 -0.7477 536.5803 616.7159)" fill="#FFFFFF" width="26.026" height="4.482"/>
 	
 		<rect x="122.001" y="408.229" transform="matrix(0.7627 0.6468 -0.6468 0.7627 297.522 10.0883)" fill="#FFFFFF" width="26.026" height="4.48"/>
 </g>
-<text transform="matrix(1 0 0 1 64.9998 387.3184)" font-family="'ArialMT'" font-size="28">Lopes Laura</text>
+<text id="nomprenom" transform="matrix(1 0 0 1 64.9998 387.3184)" font-family="'ArialMT'" font-size="28">Lopes Laura</text>
 </svg>
