@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CV dynamiques et intéractifs</title>
+<style>
+
+</style>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
+<script type="text/javascript" src="../js/queue.js" ></script>
+<script type="text/javascript" src="../js/d3.js" ></script>
+<script>
+	//lien vers les réponses du formulaire
+	var urlCSV = "../data/ReponsesDimi1.csv";
+	var urlSVG = "PoilvilainJordane.svg";
+	var dataEtu;
+	var idEtu = -1;
+	
+	//création d'un tableau json
+	var arrEtu = [{"nom":"Pauline"
+	,"comp":[{"nom":"photoshop","val":2}
+			,{"nom":"illustrator","val":8}
+			,{"nom":"javascript","val":10}]
+	, "photo":"/laphotodepauline.png"}
+				  ,{"nom":"Pierrick"
+	,"comp":[{"nom":"photoshop","val":4}
+			,{"nom":"illustrator","val":4}
+			,{"nom":"javascript","val":3}]
+	,"photo":"/laphotodepauline.png"}];
+	
+	function init(){
+		getSVG(urlSVG);		
+		d3.csv(urlCSV, function(data) {
+		  dataEtu = data;
+		  
+		}, function(error, rows) {
+		  console.log(rows);
+		});
+
+	}
+	
+	function getSVG(url){
+		queue()
+			.defer(d3.xml, url, "image/svg+xml")
+			.await(charge);
+	}
+
+	/*charge le premier svg
+	merci à http://bl.ocks.org/KoGor/8162640
+	*/
+	function charge(error, xml){
+	   	//Adding our svg file to HTML document
+		var objXml = document.importNode(xml.documentElement, true);
+		//récupère le div à remplir avec le svg
+		var objDiv = document.getElementById('objSVG');
+		//supprime tous les enfants de ce div
+		while (objDiv.firstChild) {
+		  objDiv.removeChild(objDiv.firstChild);
+		}
+		objDiv.appendChild(objXml);
+	}
+	
+	function creaGraph(){
+		//merci beaucopup à http://bost.ocks.org/mike/bar/
+		d3.select("#objSVG")
+		  .selectAll("div")
+    		.data(arrEtu[0].comp)
+  			.enter().append("div")
+    		.style("width", function(d) { 
+					return d.val * 10 + "px"; 
+				})
+			.style("background-color", "red")
+    		.text(function(d) { 
+				return d.nom; 
+				});
+		
+		
+	}
+	
+	function afficheDataEtu(d){
+		if(urlSVG=="PoilvilainJordane.svg"){			
+			d3.select("#text19").text(d['Prénom']+" "+d['Nom']);
+		}
+	}
+	
+	function nextStudent(){
+		if(idEtu == dataEtu.length-1)return;
+		idEtu ++;
+		afficheDataEtu(dataEtu[idEtu]);
+	}
+
+	function prevStudent(){
+		idEtu --;
+		if(idEtu < 0){
+			idEtu ++;
+		}		
+		afficheDataEtu(dataEtu[idEtu]);
+	}
+
+</script>
+</head>
+
+<body onload="init();">
+    <div onclick="creaGraph()">Creation du graph</div>
+    <div id="btnNextStudent" onclick="nextStudent()">Etudiant suivant</div>
+    <div id="btnPrevStudent" onclick="prevStudent()">Etudiant précédent</div>
+    <div id="objSVG"></div>
+</body>
+</html>
