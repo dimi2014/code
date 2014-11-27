@@ -3422,10 +3422,10 @@ AAAAAABAVwIMAMnVa7XrKZe3AAAAAElFTkSuQmCC" transform="matrix(0.24 0 0 0.24 -15 31
 			/>
 		
 			<text transform="matrix(0.9986 -0.0523 0.0523 0.9986 166.3936 88.2305)" fill="#FFFFFF" font-family="'CenturyGothic'" font-size="16">20ANS</text>
-		<circle id="btnPrevStudent" onclick="prevStudent()" fill="#FFFFFF" cx="36.377" cy="25.971" r="15.377"/>
-		<circle id="btnNextStudent" onclick="nextStudent()" fill="#FFFFFF" cx="73.377" cy="25.971" r="15.377"/>
-		<text transform="matrix(1 0 0 1 29 36.4063)" onclick="prevStudent()" fill="#7BC4AD" font-family="'GeosansLight'" font-size="36">&lt;</text>
-		<text transform="matrix(1 0 0 1 69.1289 35.4063)" onclick="nextStudent()" fill="#7BC4AD" font-family="'GeosansLight'" font-size="36">&gt;</text>
+		<circle style="cursor: pointer;" id="btnPrevStudent" onclick="prevStudent()" fill="#FFFFFF" cx="36.377" cy="25.971" r="15.377"/>
+		<circle style="cursor: pointer;" id="btnNextStudent" onclick="nextStudent()" fill="#FFFFFF" cx="73.377" cy="25.971" r="15.377"/>
+		<text style="cursor: pointer;" transform="matrix(1 0 0 1 29 36.4063)" onclick="prevStudent()" fill="#7BC4AD" font-family="'GeosansLight'" font-size="36">&lt;</text>
+		<text style="cursor: pointer;" transform="matrix(1 0 0 1 69.1289 35.4063)" onclick="nextStudent()" fill="#7BC4AD" font-family="'GeosansLight'" font-size="36">&gt;</text>
 	</g>
 </switch>
 <i:pgf  id="adobe_illustrator_pgf">
