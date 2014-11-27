@@ -183,7 +183,7 @@ color:#000;
 	
 	function afficheDataEtu(d){
 		if(urlSVG=="benoistflorianSVG.svg"){			
-			d3.select("#PrenomNom").text(d['Prénom']+" "+d['Nom']);
+			d3.select("#text19").text(d['Prénom']+" "+d['Nom']);
 		}
 	}
 	
