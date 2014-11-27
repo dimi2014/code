@@ -58,6 +58,10 @@
 		  objDiv.removeChild(objDiv.firstChild);
 		}
 		objDiv.appendChild(objXml);
+		d3.select("#arrowdown").on("click",function(){
+				nextStudent();							  
+			});
+		
 	}
 	
 	function creaGraph(){
@@ -78,9 +82,7 @@
 	}
 	
 	function afficheDataEtu(d){
-		if(urlSVG=="LopesLaura3.svg"){			
-			d3.select("#nomprenom").text(d['Prénom']+" "+d['Nom']);
-		}
+		d3.select("#nomprenom").text(d['Prénom']+" "+d['Nom']);
 	}
 	
 	function nextStudent(){
@@ -103,33 +105,12 @@
 <body onload="init();">
     <div onclick="creaGraph()">Creation du graph</div>
     <div id="arrowup" onclick="nextStudent()">Etudiant suivant</div>
-    <div id="arrowdown" onclick="prevStudent()">Etudiant précédent</div>
+    <div id="arrowdownDIV" onclick="prevStudent()">Etudiant précédent</div>
     <div id="objSVG"></div>
 </body>
 </html>
 
 <body onload="init();">
-    <ul id="menu">
-        <li><a href="#">Liste des CV</a>       
-            <ul>
-	<?php
-    if($dossier = opendir('.')){	
-        while(false !== ($fichier = readdir($dossier)))
-        {
-            if($fichier != '.' && $fichier != '..' && $fichier != 'index.php')
-            {
-                echo '<li><a href="#">'.$fichier.'</a></li>';
-            }
-        
-        }
-    }
-    ?>
-            </ul>
-      </li>
-    </ul>
-    <div onclick="creaGraph()">Creation du graph</div>
-    <div id="btnNextStudent" onclick="nextStudent()">Etudiant suivant</div>
-    <div id="btnPrevStudent" onclick="prevStudent()">Etudiant précédent</div>
     <div id="objSVG"></div>
 </body>
 </html>
