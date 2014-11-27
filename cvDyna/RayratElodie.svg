@@ -3,6 +3,26 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="800px" height="600px" viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
+
+
+
+	 <defs>
+<style type="text/css">
+	   <![CDATA[
+	    @font-face {
+	        font-family: OpenSans-CondensedLight;
+	        src: url('fonts/OpenSans-CondLight.ttf');
+	    }
+
+	     @font-face {
+	        font-family: QuicksandBook-Regular;
+	        src: url('fonts/Quicksand_Book.otf');
+	    }
+	   ]]>
+	 </style>
+</defs>
+
+
 <rect x="644.578" y="-2" fill="#97BE0D" width="156.422" height="43.255"/>
 <rect x="689.759" y="559" fill="#D6D4C6" width="112.574" height="43"/>
 <rect x="-2" y="-1.667" fill="#D84F5F" width="159" height="42.921"/>
@@ -371,17 +391,17 @@
 		C524.949,278.957,524.46,280.208,523.889,281.615z"/>
 </g>
 <rect x="699.961" y="567" fill="none" width="364" height="116"/>
-<text transform="matrix(1 0 0 1 699.9605 591.3198)" font-family="'OpenSans-CondensedLight'" font-size="32">Hobbies</text>
+<text transform="matrix(1 0 0 1 699.9605 591.3198)" font-family="'OpenSans-CondensedLight'" style="text-transform: uppercase;" font-size="32">Hobbies</text>
 <rect x="650.508" y="10.509" fill="none" width="155" height="43.491"/>
-<text transform="matrix(1 0 0 1 650.508 34.829)" font-family="'OpenSans-CondensedLight'" font-size="32">Expériences</text>
+<text transform="matrix(1 0 0 1 650.508 34.829)" font-family="'OpenSans-CondensedLight'" style="text-transform: uppercase;" font-size="32">Expériences</text>
 <rect x="366.395" y="24.185" fill="none" width="155" height="43.491"/>
-<text transform="matrix(1 0 0 1 366.3948 46.9853)" font-family="'OpenSans-CondensedLight'" font-size="30">elodie rayrat</text>
+<text transform="matrix(1 0 0 1 366.3948 46.9853)" font-family="'OpenSans-CondensedLight'" style="text-transform: uppercase;" font-size="30">elodie rayrat</text>
 <rect x="575.926" y="118.476" fill="none" width="155" height="43.491"/>
-<text transform="matrix(1 0 0 1 575.9263 140.8761)" font-family="'QuicksandBook-Regular'" font-size="32">Limoges</text>
+<text transform="matrix(1 0 0 1 575.9263 140.8761)" font-family="'QuicksandBook-Regular'" style="text-transform: uppercase;" font-size="32">Limoges</text>
 <rect x="7.063" y="8.509" fill="none" width="167.959" height="30.745"/>
-<text transform="matrix(1 0 0 1 7.0628 32.8289)" font-family="'OpenSans-CondensedLight'" font-size="32">Formations</text>
+<text transform="matrix(1 0 0 1 7.0628 32.8289)" font-family="'OpenSans-CondensedLight'" style="text-transform: uppercase;" font-size="32">Formations</text>
 <rect x="9.07" y="567" fill="none" width="185.687" height="28.47"/>
-<text transform="matrix(1 0 0 1 9.07 591.3203)" font-family="'OpenSans-CondensedLight'" font-size="32">Compétences</text>
+<text transform="matrix(1 0 0 1 9.07 591.3203)" font-family="'OpenSans-CondensedLight'" style="text-transform: uppercase;" font-size="32">Compétences</text>
 <g>
 	<rect x="124.052" y="382.725" display="none" opacity="0.95" width="41.686" height="40.457"/>
 	<g display="none">
@@ -813,9 +833,9 @@ zZHEWejeXg+THsQYcGw/pxa1O6T4FmAARUyfE5CUB2wAAAAASUVORK5CYII=" transform="matrix(
 <rect x="556.857" y="181.804" fill="none" width="230.143" height="149.431"/>
 <text transform="matrix(1 0 0 1 556.8567 189.505)"><tspan x="0" y="0" font-family="'QuicksandBook-Regular'" font-size="11">2014</tspan><tspan x="0" y="17" font-family="'QuicksandBook-Regular'" font-size="11">Stage</tspan><tspan x="32.504" y="17" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="35.545" y="17" font-family="'QuicksandBook-Regular'" font-size="11">de</tspan><tspan x="49.503" y="17" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="52.544" y="17" font-family="'QuicksandBook-Regular'" font-size="11">4</tspan><tspan x="59.848" y="17" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="62.889" y="17" font-family="'QuicksandBook-Regular'" font-size="11">mois</tspan><tspan x="88.728" y="17" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="91.768" y="17" font-family="'QuicksandBook-Regular'" font-size="11">à</tspan><tspan x="98.082" y="17" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="101.123" y="17" font-family="'QuicksandBook-Regular'" font-size="11">l’AVEC</tspan><tspan x="136.751" y="17" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="139.792" y="17" font-family="'QuicksandBook-Regular'" font-size="11">Limousin</tspan><tspan x="188.399" y="17" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="191.44" y="17" font-family="'QuicksandBook-Regular'" font-size="11">dans</tspan><tspan x="217.664" y="17" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="220.705" y="17" font-family="'QuicksandBook-Regular'" font-size="11">le </tspan><tspan x="0" y="34" font-family="'QuicksandBook-Regular'" font-size="11">service</tspan><tspan x="39.412" y="34" font-family="'QuicksandBook-Regular'" font-size="11" letter-spacing="2"> </tspan><tspan x="45.144" y="34" font-family="'QuicksandBook-Regular'" font-size="11">communication</tspan><tspan x="129.996" y="34" font-family="'QuicksandBook-Regular'" font-size="11" letter-spacing="2"> </tspan><tspan x="135.728" y="34" font-family="'QuicksandBook-Regular'" font-size="11">en</tspan><tspan x="149.169" y="34" font-family="'QuicksandBook-Regular'" font-size="11" letter-spacing="2"> </tspan><tspan x="154.902" y="34" font-family="'QuicksandBook-Regular'" font-size="11">tant</tspan><tspan x="177.253" y="34" font-family="'QuicksandBook-Regular'" font-size="11" letter-spacing="2"> </tspan><tspan x="182.985" y="34" font-family="'QuicksandBook-Regular'" font-size="11">qu’assis</tspan><tspan x="225.654" y="34" font-family="'QuicksandBook-Regular'" font-size="11">-</tspan><tspan x="0" y="51" font-family="'QuicksandBook-Regular'" font-size="11">tante chef de projet et graphiste</tspan><tspan x="0" y="85" font-family="'QuicksandBook-Regular'" font-size="11">2013</tspan><tspan x="0" y="102" font-family="'QuicksandBook-Regular'" font-size="11">Stage</tspan><tspan x="32.504" y="102" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="35.78" y="102" font-family="'QuicksandBook-Regular'" font-size="11">de</tspan><tspan x="49.739" y="102" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="53.015" y="102" font-family="'QuicksandBook-Regular'" font-size="11">3</tspan><tspan x="59.725" y="102" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="63" y="102" font-family="'QuicksandBook-Regular'" font-size="11">mois</tspan><tspan x="88.839" y="102" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="92.115" y="102" font-family="'QuicksandBook-Regular'" font-size="11">dans</tspan><tspan x="118.338" y="102" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="121.614" y="102" font-family="'QuicksandBook-Regular'" font-size="11">une</tspan><tspan x="141.798" y="102" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="145.074" y="102" font-family="'QuicksandBook-Regular'" font-size="11">start-up</tspan><tspan x="189.415" y="102" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="192.69" y="102" font-family="'QuicksandBook-Regular'" font-size="11">à</tspan><tspan x="199.004" y="102" font-family="'QuicksandBook-Regular'" font-size="11"> </tspan><tspan x="202.28" y="102" font-family="'QuicksandBook-Regular'" font-size="11">Ester </tspan><tspan x="0" y="119" font-family="'QuicksandBook-Regular'" font-size="11">Technopole.</tspan><tspan x="66.57" y="119" font-family="'QuicksandBook-Regular'" font-size="11" letter-spacing="1"> </tspan><tspan x="71.254" y="119" font-family="'QuicksandBook-Regular'" font-size="11">Design</tspan><tspan x="108.367" y="119" font-family="'QuicksandBook-Regular'" font-size="11" letter-spacing="1"> </tspan><tspan x="113.052" y="119" font-family="'QuicksandBook-Regular'" font-size="11">d’un</tspan><tspan x="136.327" y="119" font-family="'QuicksandBook-Regular'" font-size="11" letter-spacing="1"> </tspan><tspan x="141.012" y="119" font-family="'QuicksandBook-Regular'" font-size="11">logiciel</tspan><tspan x="179.785" y="119" font-family="'QuicksandBook-Regular'" font-size="11" letter-spacing="1"> </tspan><tspan x="184.47" y="119" font-family="'QuicksandBook-Regular'" font-size="11">IHM</tspan><tspan x="204.908" y="119" font-family="'QuicksandBook-Regular'" font-size="11" letter-spacing="1"> </tspan><tspan x="209.593" y="119" font-family="'QuicksandBook-Regular'" font-size="11">à</tspan><tspan x="215.907" y="119" font-family="'QuicksandBook-Regular'" font-size="11" letter-spacing="1"> </tspan><tspan x="220.591" y="119" font-family="'QuicksandBook-Regular'" font-size="11">la </tspan><tspan x="0" y="136" font-family="'QuicksandBook-Regular'" font-size="11">création de documents en ligne</tspan></text>
 <rect x="168.133" y="86.746" fill="none" width="96.535" height="23.616"/>
-<text transform="matrix(1 0 0 1 168.1334 100.7456)" font-family="'QuicksandBook-Regular'" font-size="20">Paris</text>
+<text transform="matrix(1 0 0 1 168.1334 100.7456)" font-family="'QuicksandBook-Regular'" style="text-transform: uppercase;" font-size="20">Paris</text>
 <rect x="168.971" y="137.916" fill="none" width="96.535" height="23.616"/>
-<text transform="matrix(1 0 0 1 168.9715 151.9161)" font-family="'QuicksandBook-Regular'" font-size="20">Limoges</text>
+<text transform="matrix(1 0 0 1 168.9715 151.9161)" font-family="'QuicksandBook-Regular'" style="text-transform: uppercase;" font-size="20">Limoges</text>
 <g>
 	<path d="M159.12,151.017c-0.159-0.256-0.313-0.499-0.461-0.745c-0.729-1.217-1.384-2.471-1.901-3.794
 		c-0.292-0.747-0.534-1.509-0.66-2.303c-0.08-0.504-0.119-1.009-0.024-1.516c0.23-1.228,1.228-2.229,2.457-2.458
