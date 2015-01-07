@@ -1,4 +1,4 @@
 # code
 les exercices du cours code
-<br/>
+<hr/>
 Intervenants : Everardo Reyes, Samuel Szoniecky
