@@ -3345,9 +3345,9 @@ AAAAAABAVwIMAMnVa7XrKZe3AAAAAElFTkSuQmCC" transform="matrix(0.24 0 0 0.24 -15 31
 		</g>
 		<text transform="matrix(1 0 0 1 307.3628 172.7402)"><tspan x="0" y="0" font-family="'CenturyGothic'" font-size="14">2011, Lycée Saint Joseph Bruz, BAC ES</tspan><tspan x="0" y="21.8" font-family="'CenturyGothic'" font-size="14">2013, Lycée Bertrand d’Argentré Vitré, BTS Communication</tspan><tspan x="0" y="43.6" font-family="'CenturyGothic'" font-size="14">2014 , IUT de Vélizy,  Licence Pro. Multimédia</tspan><tspan x="0" y="65.4" font-family="'CenturyGothic'" font-size="14">2016, Université Paris 13 Villetaneuse, Master DIMI</tspan></text>
 		<circle fill="#F7AB4B" cx="290.854" cy="293.854" r="5.854"/>
-		<text transform="matrix(1 0 0 1 140.6362 337.8535)" fill="#F7AB4B" font-family="'Impact'" font-size="20">FORMATIONS</text>
+		<text transform="matrix(1 0 0 1 140.6362 337.8535)" fill="#F7AB4B" font-family="'Impact'" font-size="20">EXPÉRIENCES</text>
 		<circle fill="#E84344" cx="290.854" cy="168.854" r="5.854"/>
-		<text transform="matrix(1 0 0 1 140.6362 209)" fill="#E84344" font-family="'Impact'" font-size="20">EXPÉRIENCES</text>
+		<text transform="matrix(1 0 0 1 140.6362 209)" fill="#E84344" font-family="'Impact'" font-size="20">FORMATIONS</text>
 		<g>
 			<path fill="#E94445" d="M90.957,202.112v1.243c0,1.173-0.945,2.119-2.117,2.119h-3.531c-1.172,0-2.117-0.946-2.117-2.119v-1.243
 				l-19.063-6.255v14.558c0,3.884,3.176,7.062,7.06,7.062h31.771c3.883,0,7.06-3.178,7.06-7.062v-14.558L90.957,202.112z
