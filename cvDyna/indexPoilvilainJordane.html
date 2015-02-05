@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../js/d3.js" ></script>
 <script>
 	//lien vers les réponses du formulaire
-	var urlCSV = "../data/reponses.csv";
+	var urlCSV = "../data/reponsesJordane.csv";
 	var urlSVG = "PoilvilainJordane.svg";
 	var dataEtu;
 	var idEtu = -1;
@@ -91,7 +91,12 @@
 			d3.select("#exp3").text(d['Exp3']);
 			d3.select("#exp4").text(d['Exp4']);
 			d3.select("#exp5").text(d['Exp5']);
-			d3.select("#photoshop").width(d['Photoshop']);
+			d3.select("#photoshop").attr("width", (d['Photoshop']));
+			d3.select("#illustrator").attr("width", (d['Illustrator']));
+			d3.select("#indesign").attr("width", (d['Indesign']));
+			d3.select("#htmlcss").attr("width", (d['HTMLCSS']));
+			d3.select("#phpsql").attr("width", (d['PHPSQL']));
+			d3.select("#javascript").attr("width", (d['Javascript']));
 		}
 	}
 	
