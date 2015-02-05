@@ -1624,7 +1624,15 @@
 			<g id="Capa_1">
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 307.3628 172.7402)"><tspan x="0" y="0" font-family="'Open Sans'" font-size="14">2011, Lycée Saint Joseph Bruz, BAC ES</tspan><tspan x="0" y="21.8" font-family="'Open Sans'" font-size="14">2013, Lycée Bertrand d’Argentré Vitré, BTS Communication</tspan><tspan x="0" y="43.6" font-family="'Open Sans'" font-size="14">2014 , IUT de Vélizy,  Licence Pro. Multimédia</tspan><tspan x="0" y="65.4" font-family="'Open Sans'" font-size="14">2016, Université Paris 13 Villetaneuse, Master DIMI</tspan></text>
+		<text transform="matrix(1 0 0 1 307.3628 172.7402)"><tspan id="etu4" x="0" y="0" font-family="'Open Sans'" font-size="14">2011, Lycée Saint Joseph Bruz, BAC ES</tspan></text>
+
+		<text transform="matrix(1 0 0 1 307.3628 172.7402)"><tspan  id="etu3" x="0" y="21.8" font-family="'Open Sans'" font-size="14">2013, Lycée Bertrand d’Argentré Vitré, BTS Communication</tspan></text>
+
+		<text transform="matrix(1 0 0 1 307.3628 172.7402)"><tspan  id="etu2" x="0" y="43.6" font-family="'Open Sans'" font-size="14">2014 , IUT de Vélizy,  Licence Pro. Multimédia</tspan></text>
+
+		<text transform="matrix(1 0 0 1 307.3628 172.7402)"><tspan id="etu1" x="0" y="65.4" font-family="'Open Sans'" font-size="14">2016, Université Paris 13 Villetaneuse, Master DIMI</tspan></text>
+
+
 		<circle fill="#F7AB4B" cx="290.854" cy="293.854" r="5.854"/>
 		<text transform="matrix(1 0 0 1 140.6362 337.8535)" fill="#F7AB4B" font-family="'Impact'" font-size="20">EXPÉRIENCES</text>
 		<circle fill="#E84344" cx="290.854" cy="168.854" r="5.854"/>
@@ -1642,7 +1650,7 @@
 		</g>
 		<rect fill="#7BC4AD" width="800" height="44"/>
 		
-			<text transform="matrix(0.9986 -0.0523 0.0523 0.9986 678.0381 34.4063)" fill="#FFFFFF" font-family="'Open Sans'" font-size="13">Saint-Denis</text>
+			<text id="text20" x="630" y="28" fill="#FFFFFF" font-family="'Open Sans'" font-size="13">Saint-Denis</text>
 		<g>
 			<path fill="#FFFFFF" d="M778.359,17.531c-0.213-4.038-3.656-7.139-7.694-6.927c-4.038,0.211-7.14,3.656-6.929,7.694
 				c0.183,3.485,6.117,12.51,7.739,14.916c0.085,0.127,0.231,0.201,0.386,0.192c0.151-0.008,0.29-0.096,0.361-0.231
@@ -1668,27 +1676,39 @@
 			</g>
 		</g>
 		
-			<text id="text19" transform="matrix(0.9986 -0.0523 0.0523 0.9986 163.0605 65.9902)" fill="#FFFFFF" font-family="'Open Sans'" font-size="27">Jordane Poilvilain</text>
+			<text id="text19" transform="matrix(0.9986 -0.0523 0.0523 0.9986 163.0605 65.9902)" fill="#FFFFFF" font-family="'Open Sans'" y="5" font-size="30">Jordane Poilvilain</text>
 		
-			<text transform="matrix(0.9986 -0.0523 0.0523 0.9986 561.8184 70.1108)" fill="#FFFFFF" font-family="'Open Sans'" font-size="13">jordane.poilvilain@gmail.com</text>
+			<text id="text21" y="58" x="570" fill="#FFFFFF" font-family="'Open Sans'" font-size="13">jordane.poilvilain@gmail.com</text>
 		<text transform="matrix(1 0 0 1 140.6362 508)" fill="#B58D64" font-family="'Impact'" font-size="20">COMPÉTENCES</text>
 		<circle fill="#E84344" cx="290.854" cy="190.854" r="5.854"/>
 		<circle fill="#E84344" cx="290.854" cy="211.854" r="5.854"/>
 		<circle fill="#E84344" cx="290.854" cy="231.854" r="5.854"/>
+		
 		<text transform="matrix(1 0 0 1 305.3721 444.999)"><tspan x="0" y="0" font-family="'Open Sans'" font-size="14">Photoshop</tspan><tspan x="14.634" y="23.8" font-family="'Open Sans'" font-size="14">Illustrator</tspan><tspan x="15.303" y="47.601" font-family="'Open Sans'" font-size="14">Indesign</tspan><tspan x="-0.763" y="71.4" font-family="'Open Sans'" font-size="14">HTML / CSS</tspan><tspan x="-12.019" y="95.2" font-family="'Open Sans'" font-size="14">PHP / MySQL</tspan><tspan x="3.858" y="119" font-family="'Open Sans'" font-size="14">Javascript</tspan></text>
 		<rect x="384" y="434" fill="#FFFFFF" width="139" height="16"/>
-		<rect x="388" y="437" fill="#B58D64" width="122" height="10"/>
+		<rect id="photoshop" x="388" y="437" fill="#B58D64" width="122" height="10"/>
 		<rect x="384" y="456" fill="#FFFFFF" width="139" height="16"/>
-		<rect x="388" y="459" fill="#B58D64" width="111" height="10"/>
+		<rect id="illustrator" x="388" y="459" fill="#B58D64" width="111" height="10"/>
 		<rect x="384" y="479" fill="#FFFFFF" width="139" height="16"/>
-		<rect x="388" y="482" fill="#B58D64" width="125" height="10"/>
+		<rect id="indesign" x="388" y="482" fill="#B58D64" width="125" height="10"/>
 		<rect x="384" y="501" fill="#FFFFFF" width="139" height="16"/>
-		<rect x="388" y="504" fill="#B58D64" width="103" height="10"/>
+		<rect id="htmlcss" x="388" y="504" fill="#B58D64" width="103" height="10"/>
 		<rect x="384" y="526" fill="#FFFFFF" width="139" height="16"/>
-		<rect x="388" y="529" fill="#B58D64" width="14" height="10"/>
+		<rect id="phpsql" x="388" y="529" fill="#B58D64" width="14" height="10"/>
 		<rect x="384" y="548" fill="#FFFFFF" width="139" height="16"/>
-		<rect x="388" y="551" fill="#B58D64" width="50" height="10"/>
-		<text transform="matrix(1 0 0 1 307.3628 299)"><tspan x="0" y="0" font-family="'Open Sans'" font-size="14">2012, Rennes, Le Triangle Congrès, Assistant de Communication</tspan><tspan x="0" y="21.8" font-family="'Open Sans'" font-size="14">2012, Vitré, Vitré Capital Santé, Graphiste</tspan><tspan x="0" y="43.6" font-family="'Open Sans'" font-size="14">2012/13, </tspan><tspan x="57.273" y="43.6" font-family="'Open Sans'" font-size="14">MEEF du Pays de Vitré, Assistant Chargé de Projet</tspan><tspan x="0" y="65.4" font-family="'Open Sans'" font-size="14">2013/14, Montigny-le-Bretonneux, CNFPT, Assistant de Communication</tspan><tspan x="0" y="87.2" font-family="'Open Sans'" font-size="14">2013/14, Agence Eighty-Six &amp; WAB, Webdesigner, Graphiste, Integrateur </tspan></text>
+		<rect id="javascript" x="388" y="551" fill="#B58D64" width="50" height="10"/>
+
+		<text transform="matrix(1 0 0 1 307.3628 299)"><tspan id="exp1" x="0" y="0" font-family="'Open Sans'" font-size="14">2012, Rennes, Le Triangle Congrès, Assistant de Communication</tspan></text>
+
+		<text transform="matrix(1 0 0 1 307.3628 299)"><tspan id="exp2" x="0" y="21.8" font-family="'Open Sans'" font-size="14">2012, Vitré, Vitré Capital Santé, Graphiste</tspan></text>
+
+		<text transform="matrix(1 0 0 1 307.3628 299)"><tspan id="exp3" x="0" y="43.6" font-family="'Open Sans'" font-size="14">2012/13, MEEF du Pays de Vitré, Assistant Chargé de Projet</tspan></text>
+
+		<text transform="matrix(1 0 0 1 307.3628 299)"><tspan  id="exp4" x="0" y="65.4" font-family="'Open Sans'" font-size="14">2013/14, Montigny-le-Bretonneux, CNFPT, Assistant de Communication</tspan></text>
+
+		<text transform="matrix(1 0 0 1 307.3628 299)"><tspan id="exp5" x="0" y="87.2" font-family="'Open Sans'" font-size="14">2013/14, Agence Eighty-Six &amp; WAB, Webdesigner, Graphiste, Integrateur </tspan></text>
+
+
 		<circle fill="#F7AB4B" cx="290.854" cy="359.854" r="5.854"/>
 		<circle fill="#F7AB4B" cx="290.854" cy="315.854" r="5.854"/>
 		<circle fill="#F7AB4B" cx="290.854" cy="337.854" r="5.854"/>
@@ -1702,7 +1722,6 @@
 			c4.633,0.676,11.711-0.597,14.484-0.941c2.536-0.314,12.193-3.062,14.948-4.07C113.711,496.607,117.132,496.871,115.508,492.429z"
 			/>
 		
-			<text transform="matrix(0.9986 -0.0523 0.0523 0.9986 166.3936 88.2305)" fill="#FFFFFF" font-family="'Open Sans'" font-size="16">20ANS</text>
 		<circle style="cursor: pointer;" id="btnPrevStudent" onclick="prevStudent()" fill="#FFFFFF" cx="36.377" cy="25.971" r="15.377"/>
 		<circle style="cursor: pointer;" id="btnNextStudent" onclick="nextStudent()" fill="#FFFFFF" cx="73.377" cy="25.971" r="15.377"/>
 		<text style="cursor: pointer;" transform="matrix(1 0 0 1 29 36.4063)" onclick="prevStudent()" fill="#7BC4AD" font-family="'GeosansLight'" font-size="36">&lt;</text>

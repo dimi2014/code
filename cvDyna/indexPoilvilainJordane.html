@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../js/d3.js" ></script>
 <script>
 	//lien vers les réponses du formulaire
-	var urlCSV = "../data/ReponsesDimi1.csv";
+	var urlCSV = "../data/reponses.csv";
 	var urlSVG = "PoilvilainJordane.svg";
 	var dataEtu;
 	var idEtu = -1;
@@ -80,6 +80,18 @@
 	function afficheDataEtu(d){
 		if(urlSVG=="PoilvilainJordane.svg"){			
 			d3.select("#text19").text(d['Prénom']+" "+d['Nom']);
+			d3.select("#text20").text(d['Ville']);
+			d3.select("#text21").text(d['Email']);
+			d3.select("#etu1").text(d['Etude1']);
+			d3.select("#etu2").text(d['Etude2']);
+			d3.select("#etu3").text(d['Etude3']);
+			d3.select("#etu4").text(d['Etude4']);
+			d3.select("#exp1").text(d['Exp1']);
+			d3.select("#exp2").text(d['Exp2']);
+			d3.select("#exp3").text(d['Exp3']);
+			d3.select("#exp4").text(d['Exp4']);
+			d3.select("#exp5").text(d['Exp5']);
+			d3.select("#photoshop").width(d['Photoshop']);
 		}
 	}
 	
@@ -101,7 +113,26 @@
 </head>
 
 <body onload="init();">
-    <div onclick="creaGraph()">Creation du graph</div>
+
     <div id="objSVG"></div>
 </body>
 </html>
+
+<style>
+body {
+	width:800px;
+	margin:auto;
+	vertical-align: middle;
+	background-image: url("../img/fond.jpg");
+}
+
+#objSVG {
+background-color: #7BC4AD;
+padding-left: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-top: 10px;
+width: 810px;
+}
+
+</style>
